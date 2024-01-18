@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .quiz3 {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        textarea {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #228B22;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            color: white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit_answers.php" method="post">
+        <div class="quiz3">
+            <h2><b>Explore Health Insurance Information</b></h2>
+            <form>
+
+                <input type="text" placeholder="your first Name">
+                <input type="text" name="lastname" placeholder="Enter Last Name">
+                <br>
+                <br>
+                <input type="text" placeholder="your age">
+                <br>
+                <br>
+                <input type="text" placeholder="email">
+                <input type="text" name="phone number" placeholder="phone no.">
+                <br>
+                <br>
+                <textarea name="message" rows="5" cols="60" placeholder="Enter Street Address"></textarea>
+                <br>
+                <br>
+                <input type="text" placeholder=" City">
+                <input type="text" name="state" placeholder="Enter State">
+                <br>
+                <br>
+                <input type="text" placeholder="Enter Zip Code">
+                <input type="text" name="country" placeholder="Enter Country">
+                <br>
+                <br>
+                <input type="text" placeholder="Enter Spouse's Name">
+                <input type="text" name="age of spouse " placeholder="Enter Spouse's Age">
+                <br>
+                <br>
+                <input type="text" placeholder="Enter Children's Name (Under Age 26)">
+                <input type="text" name="child age " placeholder="Enter Children's Age">
+                <br>
+                <br>
+                <div class="question">
+                    <p>1. Does your employer offer health insurance?</p>
+                    <input type="radio" name="q1" value="a"> a) Yes<br>
+                    <input type="radio" name="q1" value="b"> b) No<br>
+                    <p>2. Do you receive Medicare?</p>
+                    <input type="radio" name="q2" value="a"> a) Yes<br>
+                    <input type="radio" name="q2" value="b"> b) No<br>
+                    <br>
+                    <textarea name="message" rows="5" cols="60" placeholder="Enter Additional Message"></textarea>
+                </div>
+                <br>
+                <div class="hero-section">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </form>
+</body>
+
+</html>
